@@ -1,13 +1,16 @@
 """
 Skeleton to solve the problems
 """
+import os
+import sys
+sys.path.append(os.path.abspath('./src/helpers'))
+
+f = open(sys.argv[1])
 
 
 def alg():
-    pass
+    return
 
-f = open("input.txt")
-o = open("output.txt", "w")
 T = int(f.readline().strip())
 for i in range(T):
     n = f.readline().strip()
@@ -17,7 +20,6 @@ for i in range(T):
     # v2 = map(int, f.readline().strip().split(" "))
 
     out = alg()
-    o.write("Case #%d: %s\n" % (i+1, str(out)))
+    print("Case #%d: %s\n" % (i+1, str(out)))
 
 f.close()
-o.close()
