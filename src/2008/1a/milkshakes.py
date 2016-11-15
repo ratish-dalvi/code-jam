@@ -22,7 +22,7 @@ for ii in range(C):
     M = int(f.readline().strip())  # n_customers
     # Customer preferences: [(n_zeroes, milkshake_index_of_one), ...]
     c_prefs = [[0, -1] for j in range(M)]
-    # Milkshake preferences: {milkshake_number: [cust_index1, cust_index2, ..]}
+    # Milkshake preferences: {milkshake_index: [cust_index1, cust_index2, ..]}
     m_prefs = [set([]) for j in range(N)]  # Starts with 1
     batch = [0] * N
     q = Queue()  # Queue of Unsatisfied
