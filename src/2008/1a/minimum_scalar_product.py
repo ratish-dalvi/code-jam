@@ -12,5 +12,4 @@ for i in range(T):
     v2 = map(int, f.readline().strip().split(" "))
     out = np.dot(sorted(v1), sorted(v2, reverse=True))
     print("Case #%d: %s\n" % (i+1, str(out)))
-
 f.close()
