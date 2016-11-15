@@ -1,4 +1,5 @@
 """
+Link: https://code.google.com/codejam/contest/dashboard?c=32016#s=p1&a=1
 Type: Boolean Satisfiability Problem.
 The restriction "at most one unmalted per customer" makes this solvable.
  -> Start with all 0s (unmalted)
@@ -8,15 +9,14 @@ The restriction "at most one unmalted per customer" makes this solvable.
 
 Complexity: Amortised O(n)
 """
-
 import os
 import sys
 sys.path.append(os.path.abspath('./src/helpers'))
 from queue import Queue
 
 f = open(sys.argv[1])
-
 C = int(f.readline().strip())
+
 for ii in range(C):
     N = int(f.readline().strip())  # n_milshakes
     M = int(f.readline().strip())  # n_customers
