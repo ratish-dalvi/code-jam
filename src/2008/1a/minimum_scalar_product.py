@@ -4,7 +4,6 @@ https://code.google.com/codejam/contest/dashboard?c=32016#s=p0&a=1
 import sys
 import numpy as np
 
-
 f = open(sys.argv[1])
 T = int(f.readline().strip())
 for i in range(T):
