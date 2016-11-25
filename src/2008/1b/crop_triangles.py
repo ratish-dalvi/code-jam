@@ -37,21 +37,38 @@ D - all the values are different
 """
 import os
 import sys
+import numpy as np
 sys.path.append(os.path.abspath('./src/helpers'))
-
+import utils
+from utils import nCr, permutations
 f = open(sys.argv[1])
 
 
-def alg():
-    return
+def perm(x):
+    for y in x:
+        return perm(x)
 
 T = int(f.readline().strip())
 for i in range(T):
-    n = f.readline().strip()
+    n, A, B, C, D, x0, y0, M = map(int, f.readline().split(" "))
+    arr = [[0, 0, 0] for j in range(3)]  # Initialize 3 * 3 array
 
-    # TODO
+    # generate and store data
+    X = x0
+    Y = y0
+    arr[X % 3][Y % 3] += 1
+    for j in range(n-1):
+        X = (A * X + B) % M
+        Y = (C * Y + D) % M
+        arr[X % 3][Y % 3] += 1
 
-    out = alg()
-    print("Case #%d: %s\n" % (i+1, str(out)))
+    perm_012 = permutations([0, 1, 2])
+    r = 0
+    r += reduce(lambda x, y: x + nCr(y, 3), [x for y in arr for x in y], 0)
+    r += reduce(lambda x, y: x + np.prod(y), arr, 0)  # SD
+    r += sum([reduce(lambda x, y: x * y[j], arr, 0) for j in range(3)])  # DS
+    r += sum([arr[0][pp[0]] * arr[1][pp[1]] * arr[2][pp[2]]
+              for pp in perm_012])  # DD
+    print("Case #%d: %s" % (i+1, str(int(r))))
 
 f.close()
