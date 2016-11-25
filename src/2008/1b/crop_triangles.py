@@ -1,5 +1,5 @@
 """
-Link: https://code.google.com/codejam/contest/32017/dashboard#s=a&a=0
+Link: https://code.google.com/codejam/contest/32017/dashboard#s=p0&a=0
 
 (a + b + c) / 3 = N  where N is an integer
 Let a = 3*a_1 + ar, b = 3*b1 + br ... where ar, br, cr belong to {0, 1, 2}
