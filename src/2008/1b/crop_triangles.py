@@ -62,13 +62,15 @@ for i in range(T):
         Y = (C * Y + D) % M
         arr[X % 3][Y % 3] += 1
 
+    # Start Solution
     perm_012 = permutations([0, 1, 2])
     r = 0
-    r += reduce(lambda x, y: x + nCr(y, 3), [x for y in arr for x in y], 0)
+    r += reduce(lambda x, y: x + nCr(y, 3), [a for b in arr for a in b], 0) # SS
     r += reduce(lambda x, y: x + np.prod(y), arr, 0)  # SD
-    r += sum([reduce(lambda x, y: x * y[j], arr, 0) for j in range(3)])  # DS
+    r += sum([reduce(lambda x, y: x * y[j], arr, 1) for j in range(3)])  # DS
     r += sum([arr[0][pp[0]] * arr[1][pp[1]] * arr[2][pp[2]]
               for pp in perm_012])  # DD
+
     print("Case #%d: %s" % (i+1, str(int(r))))
 
 f.close()
