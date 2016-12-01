@@ -20,6 +20,6 @@ for i in range(T):
     # v2 = map(int, f.readline().strip().split(" "))
 
     out = alg()
-    print("Case #%d: %s\n" % (i+1, str(out)))
+    print("Case #%d: %s" % (i+1, str(out)))
 
 f.close()
