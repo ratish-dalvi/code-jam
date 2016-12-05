@@ -1,5 +1,6 @@
-
 """
+https://code.google.com/codejam/contest/32017/dashboard#s=p1
+
 Problem Solved using undirected graph
 -------------------------------------
 
