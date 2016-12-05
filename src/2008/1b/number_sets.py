@@ -13,10 +13,14 @@ Problem Solved using undirected graph
    common prime factors as edges
 4. Find disjoint sets in the Graph
 
-Note - The program takes about 4-5 minutes. Although the implementation uses a
+Note - The program takes about 5-6 minutes. Although the implementation uses a
     linear solution to find the disconnected components, python slows it
     down :(. Prime number generation alone takes up about 1 minute for all
     the inputs of the large dataset.
+
+Comparison between Union-find and undirected-graph on large Dataset:
+    UnionFind - 6m 14s
+    Undirected Graph - 5m 37s
 """
 
 import os
