@@ -31,7 +31,6 @@ from utils import prime_numbers
 from graphs import Graph
 
 f = open(sys.argv[1])
-
 T = int(f.readline().strip())
 for cc in range(T):
     # integer lists
