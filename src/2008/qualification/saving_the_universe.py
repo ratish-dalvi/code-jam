@@ -32,7 +32,6 @@ for c in range(T):
         if len(set_e) == S:
             out += 1
             set_e = set([q])
-
     print("Case #%d: %s" % (c+1, str(out)))
 
 f.close()
