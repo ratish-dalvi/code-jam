@@ -5,7 +5,6 @@ Greedy Approach
 ---------------
 1. Switch when all distinct elements at least occur once
 2. Reset and Repeat 1 till the end.
-
 """
 
 import os
