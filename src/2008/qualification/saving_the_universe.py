@@ -23,12 +23,11 @@ for c in range(T):
     S = int(f.readline().strip())
     engines = [f.readline().strip() for i in range(S)]
     Q = int(f.readline().strip())
-    queries = [f.readline().strip() for i in range(Q)]
 
     set_e = set([])
     out = 0
-
-    for q in queries:
+    for i in range(Q):
+        q = f.readline().strip()
         set_e.add(q)
         if len(set_e) == S:
             out += 1
