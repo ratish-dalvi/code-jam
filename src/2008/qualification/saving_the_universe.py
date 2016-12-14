@@ -7,7 +7,7 @@ Greedy Approach
 2. Reset and Repeat 1 till the end.
 
 Greedy approach will do at least as good as the best solution in this case.
-If the position of the switch needed to be optimum, thils solution would have
+If the position of the switch needed to be optimum, this solution would have
 failed.
 """
 
