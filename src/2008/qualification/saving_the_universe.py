@@ -1,0 +1,39 @@
+"""
+https://code.google.com/codejam/contest/32013/dashboard
+
+Greedy Approach
+---------------
+1. Switch when all distinct elements at least occur once
+2. Reset and Repeat 1 till the end.
+
+Greedy approach will do at least as good as the best solution in this case.
+If the position of the switch needed to be optimum, thils solution would have
+failed.
+"""
+
+import os
+import sys
+sys.path.append(os.path.abspath('./src/helpers'))
+
+f = open(sys.argv[1])
+
+T = int(f.readline().strip())
+for c in range(T):
+    # read
+    S = int(f.readline().strip())
+    engines = [f.readline().strip() for i in range(S)]
+    Q = int(f.readline().strip())
+    queries = [f.readline().strip() for i in range(Q)]
+
+    set_e = set([])
+    out = 0
+
+    for q in queries:
+        set_e.add(q)
+        if len(set_e) == S:
+            out += 1
+            set_e = set([q])
+
+    print("Case #%d: %s" % (c+1, str(out)))
+
+f.close()
