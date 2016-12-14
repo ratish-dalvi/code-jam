@@ -6,9 +6,6 @@ Greedy Approach
 1. Switch when all distinct elements at least occur once
 2. Reset and Repeat 1 till the end.
 
-Greedy approach will do at least as good as the best solution in this case.
-If the position of the switch needed to be optimum, this solution would have
-failed.
 """
 
 import os
