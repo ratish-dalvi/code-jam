@@ -12,14 +12,14 @@ def alg():
     return
 
 T = int(f.readline().strip())
-for i in range(T):
-    n = f.readline().strip()
+for c in range(T):
+    n = int(f.readline().strip())
 
     # integer lists
     # v1 = map(int, f.readline().strip().split(" "))
     # v2 = map(int, f.readline().strip().split(" "))
 
     out = alg()
-    print("Case #%d: %s" % (i+1, str(out)))
+    print("Case #%d: %s" % (c+1, str(out)))
 
 f.close()
