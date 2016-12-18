@@ -9,7 +9,7 @@ Data Structure used - Dict of time table for each station
     1: [[]. [], [X2]] ... 1440 lists]    # 1 - B station
   }
 Where X1 is the arrival time of a train departing from station 0 in
-unit - minutes since midnight and index of X1 is the departure time
+unit "minutes since midnight". Index of X1 is the departure time
 from that station in the same unit.
 """
 
