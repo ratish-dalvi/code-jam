@@ -22,3 +22,26 @@ def prime_numbers(x):
                 if j in primes:
                     primes.remove(j)
     return primes
+
+
+def change_base(n, b):
+    s = ""
+    while n:
+        s = str(n % b) + s
+        n /= b
+    return s
+
+
+def is_happy_number(n, b):
+    """
+    find whether n (decimal) is a happy number in base b
+    """
+    visited = set([])
+    while n > 1 and n not in visited:
+        visited.add(n)
+        s = 0
+        while n:
+            s += (n % b) ** 2
+            n /= b
+        n = s
+    return n == 1, visited
