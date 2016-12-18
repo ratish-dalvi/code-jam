@@ -39,8 +39,7 @@ import os
 import sys
 import numpy as np
 sys.path.append(os.path.abspath('./src/helpers'))
-import utils
-from utils import nCr, permutations
+from math_utils import nCr, permutations
 f = open(sys.argv[1])
 
 

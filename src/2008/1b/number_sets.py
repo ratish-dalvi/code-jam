@@ -27,7 +27,7 @@ import os
 import sys
 import math
 sys.path.append(os.path.abspath('./src/helpers'))
-from utils import prime_numbers
+from math_utils import prime_numbers
 from graphs import Graph
 
 f = open(sys.argv[1])
