@@ -2,7 +2,7 @@
 https://code.google.com/codejam/contest/188266/dashboard#s=p0&a=0
 1. Happy numbers reach cycles -
    https://en.wikipedia.org/wiki/Happy_number#Programming_example
-2. Use caching to improves speed
+2. Use caching to improve speed.
 3. Higher bases converge quickly. So, reverse sort input bases
 
 Large input finishes in 3 minutes.
