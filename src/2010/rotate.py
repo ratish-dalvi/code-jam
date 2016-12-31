@@ -33,7 +33,6 @@ for cc in range(T):
     # count
     won = {"R": False, "B": False}
     out = {"R": "Red", "B": "Blue", "": "Neither", "BR": "Both", "RB": "Both"}
-
     for i in range(N):
         for j in reversed(range(N)):
             if arr[i][j] != '.' and not won[arr[i][j]]:
