@@ -5,7 +5,7 @@ https://code.google.com/codejam/contest/544101/dashboard#s=p0&a=0
 2. Since the maximum value of N is only 50, I chose a simple and readable
    algorithm for finding whether a player has K pieces joined -- Start from
    top-left and for every element, check k elements on east, south,
-   east-south diagonal and west-south diagonal.
+   south-east diagonal and south-west diagonal.
 Large finishes in under a second.
 """
 import sys
