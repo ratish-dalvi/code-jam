@@ -27,7 +27,7 @@ for c in range(T):
         for x in range(256):  # previous pixel
             for y in range(256):  # current pixel
                 arr2[y] = min(arr2[y], arr1[x] + abs(p - y) +
-                              (((max(0, abs(y - x) - 1) // max(M, 1)) * I)
+                              (((max(0, abs(y - x) - 1) // M) * I)
                                if M > 0 else abs(y-x) * inf))
         arr1 = arr2
     print("Case #%d: %d" % (c+1, min(arr1)))
