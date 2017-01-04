@@ -14,6 +14,7 @@ import numpy as np
 f = open(sys.argv[1])
 T = int(f.readline().strip())
 
+inf = 9999999  # can't use np.inf since I want to multiply with 0
 for c in range(T):
     D, I, M, N = map(int, f.readline().strip().split(" "))
     cache = np.ones((N, 256)) * -1
@@ -28,10 +29,11 @@ for c in range(T):
         best = go(pixels, n-1, y) + D
         for x in range(256):  # previous pixel value
             o = go(pixels, n-1, x)
-            best = min(best,
-                       o + abs(y - pixels[n]) +
-                       (((max(0, abs(y - x) - 1) // max(M, 1)) * I)
-                        if M > 0 else abs(y-x)))
+            best = min(
+                best,
+                o + abs(y - pixels[n]) +
+                (((max(0, abs(y - x) - 1) // max(M, 1)) * I)
+                 if M > 0 else inf*(abs(y-x))))
         cache[n][y] = best
         return best
 
