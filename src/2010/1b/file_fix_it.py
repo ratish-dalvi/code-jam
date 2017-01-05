@@ -1,9 +1,6 @@
 """
 https://code.google.com/codejam/contest/635101/dashboard
 """
-"""
-Skeleton to solve the problems
-"""
 import os
 import sys
 sys.path.append(os.path.abspath('./src/helpers'))
