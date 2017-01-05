@@ -1,9 +1,7 @@
 """
 https://code.google.com/codejam/contest/635101/dashboard
 """
-import os
 import sys
-sys.path.append(os.path.abspath('./src/helpers'))
 
 f = open(sys.argv[1])
 
