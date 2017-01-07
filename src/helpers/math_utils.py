@@ -45,3 +45,13 @@ def is_happy_number(n, b):
             n /= b
         n = s
     return n == 1, visited
+
+
+def gcd_n(lst):
+    return reduce(lambda x, y: gcd(x, y), lst)
+
+
+def gcd(a, b):
+    if b == 0:
+        return a
+    return gcd(b, a % b)
