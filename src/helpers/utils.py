@@ -1,3 +1,5 @@
+# Basic utility functions
+
 from numpy import unravel_index
 
 
