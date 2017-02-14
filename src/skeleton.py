@@ -16,7 +16,8 @@ for c in range(T):
     # v1 = map(int, f.readline().strip().split(" "))
     # v2 = map(int, f.readline().strip().split(" "))
 
-    # Write algorith here
+    # Write algorithm here
+
     print("Case #%d: %s" % (c+1, str(out)))
 
 f.close()
