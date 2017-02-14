@@ -1,3 +1,6 @@
+"""
+Mathematical Utility functions
+"""
 from scipy.special import comb as comb
 import itertools
 import math
