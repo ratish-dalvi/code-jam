@@ -17,7 +17,7 @@ for c in range(T):
     # v2 = map(int, f.readline().strip().split(" "))
 
     # Write algorithm here
-
+    out = None
     print("Case #%d: %s" % (c+1, str(out)))
 
 f.close()
