@@ -1,5 +1,5 @@
 """
-Skeleton to solve the problems
+Skeleton to solve problems
 """
 import os
 import sys
