@@ -1,5 +1,5 @@
 """
-Skeleton to solve problems
+https://code.google.com/codejam/contest/5304486/dashboard#s=p0
 """
 import os
 import sys
