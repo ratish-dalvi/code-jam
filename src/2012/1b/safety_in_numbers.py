@@ -1,12 +1,12 @@
 """
 https://code.google.com/codejam/contest/1836486/dashboard
-let sum x_i = X  where x_i is the ith element and p is the minimum required
+let \sum x_i = X  where x_i is the ith element and p is the minimum required
 fraction for the ith element to not be eliminated.
 The main idea is to match (xi + pX) with [(X - xi) + (1 - p)X] / (n-1)
 But the first term (X - xi) isn't right. If there are elements which can never
-be 'matched' we should remove them from X. So, we start from the highest
-element in the decreasing order and if p < 0 (it can't be matched) we remove
-it from X for the subsequent elements.
+be 'matched' we should remove them from X. So, we sort elements in the
+descending order and if for an element, p < 0 (it can't be matched), we
+subtract it element from X.
 """
 import os
 import sys
