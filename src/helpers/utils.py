@@ -4,8 +4,12 @@ from numpy import unravel_index
 import math
 
 
-def np_argmin(x):
-    return unravel_index(x.argmin(), x.shape)
+def np_argmin(X, lean=True):
+    if lean:
+        return unravel_index(X.argmin(), X.shape)
+    else:
+        idx = unravel_index(X.argmin(), X.shape)
+        return idx, X[idx]
 
 
 def maximum_contiguous_subarray(lst):
